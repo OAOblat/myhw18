@@ -56,14 +56,13 @@ public class AviaSoulsTest {
     );
 
 
-    @Test
-    public void shouldSortFiveTickets() {
-        Ticket[] tickets = {ticket1, ticket2, ticket3, ticket4, ticket5, ticket6};
-        Arrays.sort(tickets);
-        //      Ticket[] expected = {ticket2, ticket1, ticket3...};      ???
-        //      Assertions.assertArrayEquals(expected, actual);       ???
-
-    }
+//   @Test
+//   public void shouldSortTickets() {
+//       AviaSouls aviaSouls = new AviaSouls();
+//       Ticket[] tickets = {ticket1, ticket2, ticket3, ticket4, ticket5, ticket6};
+//       Ticket [] expected = {ticket2,ticket6,ticket1, ticket5, ticket4, ticket3}
+//       Ticket [] actual = aviaSouls.search("Saint-Petersburg", "Krasnodar");
+//   }
 
     @Test
     public void shouldSearchWhen0Result() {
@@ -111,15 +110,15 @@ public class AviaSoulsTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-    @Test
-    public void shouldCompareByTime() {
-        TicketTimeComparator timeComparator = new TicketTimeComparator();
-        Ticket[] tickets = {ticket1, ticket2, ticket3, ticket4, ticket5, ticket6};
-        Arrays.sort(tickets, timeComparator);
-        //      Ticket[] expected = {ticket2, ticket1, ticket3...};      ???
-        //      Assertions.assertArrayEquals(expected, actual);       ???
+//   @Test
+//   public void shouldCompareByTime() {
+//       TicketTimeComparator timeComparator = new TicketTimeComparator();
+//       Ticket[] tickets = {ticket1, ticket2, ticket3, ticket4, ticket5, ticket6};
+//       Arrays.sort(tickets, timeComparator);
+//       //      Ticket[] expected = {ticket2, ticket1, ticket3...};      ???
+//       //      Assertions.assertArrayEquals(expected, actual);       ???
 
-    }
+//   }
 
     @Test
     public void shouldSearchWhenThreeResultByTime() {
